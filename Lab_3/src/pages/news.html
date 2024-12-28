@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 20px;
+            border-bottom: 4px solid #444;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container h2 {
+            text-align: center;
+            color: #2575fc;
+            margin-bottom: 20px;
+        }
+        .news-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .news-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .news-item div {
+            flex: 1;
+        }
+        .news-item h3 {
+            margin: 0 0 10px;
+            color: #2575fc;
+        }
+        .news-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .news-item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            background: #2575fc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .news-item a:hover {
+            background: #6a11cb;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #444;
+            color: #fff;
+            border-top: 4px solid #333;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .news-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .news-item img {
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Новини</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="rozklad.html">Розклад</a></li>
+                <li><a href="photo.html">Фотоблог</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Останні новини</h2>
+        <div class="news-item">
+            <img src="src/assets/images/news1.jpg" alt="Новина 1">
+            <div>
+                <h3>Заголовок новини 1</h3>
+                <p><strong>Дата публікації:</strong> 28 грудня 2024</p>
+                <p>Короткий опис новини. Наприклад, обговорення останніх подій...</p>
+                <a href="https://example.com/news1" target="_blank">Детальніше</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="src/assets/images/news2.jpg" alt="Новина 2">
+            <div>
+                <h3>Заголовок новини 2</h3>
+                <p><strong>Дата публікації:</strong> 27 грудня 2024</p>
+                <p>Короткий опис новини. Наприклад, нові досягнення у сфері науки...</p>
+                <a href="https://example.com/news2" target="_blank">Детальніше</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="src/assets/images/news3.jpg" alt="Новина 3">
+            <div>
+                <h3>Заголовок новини 3</h3>
+                <p><strong>Дата публікації:</strong> 26 грудня 2024</p>
+                <p>Короткий опис новини. Наприклад, зміни в системі освіти...</p>
+                <a href="https://example.com/news3" target="_blank">Детальніше</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2015. Всі права захищені. Напишіть мені!</p>
+    </footer>
+</body>
+</html>
+
+
+

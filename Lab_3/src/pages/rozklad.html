@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid #444;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #2575fc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th {
+            background: #2575fc;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #444;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Розклад занять</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="rozklad.html">Розклад</a></li>
+                <li><a href="photo.html">Фотоблог</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Розклад занять</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>День</th>
+                    <th>Час</th>
+                    <th>Предмет</th>
+                    <th>Аудиторія</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Понеділок</td>
+                    <td>8:00 - 9:30</td>
+                    <td>Веб-програмування</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>Вівторок</td>
+                    <td>10:00 - 11:30</td>
+                    <td>Інтернет-бізнес</td>
+                    <td>202</td>
+                </tr>
+                <tr>
+                    <td>Вівторок</td>
+                    <td>14:30 - 15:50</td>
+                    <td>Основи машинного навчання</td>
+                    <td>202</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Викладачі</h2>
+        <ul>
+            <li>Проф. Кудін Олексій Володимирович</li>
+            <li>Доц. Дребезов  П.П.</li>
+            <li>Асист. Мильцев  С.С.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>Copyright 2015. Всі права захищені. Напишіть мені!</p>
+    </footer>
+</body>
+</html>
+
+
